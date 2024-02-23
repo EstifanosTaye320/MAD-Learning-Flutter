@@ -29,17 +29,16 @@ class _ScreenChangeState extends State<ScreenChange> {
           "Learn Flutter the fun way!",
           style: TextStyle(
             color: Color.fromARGB(255, 115, 89, 161),
-            fontSize: 30,
+            fontSize: 24,
           ),
         ),
         const SizedBox(
           height: 30,
         ),
         OutlinedButton(
-          style: const ButtonStyle(
-              foregroundColor:
-                  MaterialStatePropertyAll(Color.fromARGB(255, 116, 90, 163)),
-              textStyle: MaterialStatePropertyAll(TextStyle(fontSize: 20))),
+          style: OutlinedButton.styleFrom(
+            foregroundColor: const Color.fromARGB(255, 116, 90, 163),
+          ),
           onPressed: handleClick,
           child: const Text('--> Start Quiz'),
         ),
