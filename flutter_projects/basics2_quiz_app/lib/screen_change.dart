@@ -35,12 +35,13 @@ class _ScreenChangeState extends State<ScreenChange> {
         const SizedBox(
           height: 30,
         ),
-        OutlinedButton(
+        OutlinedButton.icon(
           style: OutlinedButton.styleFrom(
             foregroundColor: const Color.fromARGB(255, 116, 90, 163),
           ),
           onPressed: handleClick,
-          child: const Text('--> Start Quiz'),
+          icon: const Icon(Icons.arrow_right_alt),
+          label: const Text('Start Quiz'),
         ),
       ],
     );
