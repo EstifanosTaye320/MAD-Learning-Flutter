@@ -1,3 +1,4 @@
+import 'package:basics2_quiz_app/questions_screen.dart';
 import 'package:basics2_quiz_app/screen_change.dart';
 import 'package:flutter/material.dart';
 
@@ -11,6 +12,14 @@ class Quiz extends StatefulWidget {
 }
 
 class _QuizState extends State<Quiz> {
+  Widget activeScreen = const StartScreen();
+
+  void switchScreen() {
+    setState(() {
+      activeScreen = const QuestionScreen();
+    });
+  }
+
   @override
   Widget build(BuildContext context) {
     return MaterialApp(
@@ -26,8 +35,8 @@ class _QuizState extends State<Quiz> {
               end: Alignment.bottomRight,
             ),
           ),
-          child: const Center(
-            child: ScreenChange(),
+          child: Center(
+            child: activeScreen,
           ),
         ),
       ),

@@ -1,16 +1,7 @@
 import 'package:flutter/material.dart';
 
-class ScreenChange extends StatefulWidget {
-  const ScreenChange({super.key});
-
-  @override
-  State<ScreenChange> createState() => _ScreenChangeState();
-}
-
-class _ScreenChangeState extends State<ScreenChange> {
-  void handleClick() {
-    //..
-  }
+class StartScreen extends StatelessWidget {
+  const StartScreen({super.key});
 
   @override
   Widget build(BuildContext context) {
@@ -39,7 +30,7 @@ class _ScreenChangeState extends State<ScreenChange> {
           style: OutlinedButton.styleFrom(
             foregroundColor: const Color.fromARGB(255, 199, 188, 188),
           ),
-          onPressed: handleClick,
+          onPressed: () {},
           icon: const Icon(Icons.arrow_right_alt),
           label: const Text('Start Quiz'),
         ),
