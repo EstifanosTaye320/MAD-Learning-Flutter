@@ -8,13 +8,13 @@ class AnswerButton extends StatelessWidget {
 
   @override
   Widget build(BuildContext context) {
-    return Padding(
-      padding: const EdgeInsets.symmetric(vertical: 10),
+    return Container(
+      margin: const EdgeInsets.symmetric(vertical: 10),
       child: ElevatedButton(
         onPressed: onTap,
         style: ElevatedButton.styleFrom(
             padding: const EdgeInsets.symmetric(
-              vertical: 10,
+              vertical: 20,
               horizontal: 40,
             ),
             backgroundColor: const Color.fromARGB(255, 31, 3, 98),
